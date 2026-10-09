@@ -11,16 +11,27 @@ Este proyecto corresponde a la pre-entrega del curso de Automation Testing. Su p
 - **Git y GitHub:** Control de versiones y alojamiento del repositorio.
 
 ## Estructura del proyecto
-- `tests/`: Directorio que contiene los distintos casos de prueba automatizados.
-  - `test_login.py`: Pruebas relacionadas al inicio de sesión.
-  - `test_inventory.py`: Pruebas de validación del catálogo de productos.
-  - `test_cart.py`: Pruebas de interacción con el carrito de compras.
-  - `conftest.py`: Fixture de Pytest para la inicialización y cierre del WebDriver.
-- `utils/`: Directorio para funciones auxiliares (helpers).
-  - `helpers.py`: Funciones reutilizables como el login.
-- `reports/`: Directorio donde se almacenan los reportes generados.
-- `pytest.ini`: Archivo de configuración central de pytest.
-- `requirements.txt`: Archivo con las dependencias necesarias.
+
+A continuación se detalla la organización de los archivos y directorios del proyecto:
+
+```text
+pre-entrega-automation-testing-ROBERTO-DE-EZCURRA/
+├── .gitignore               # Archivos ignorados por git (ej. venv/)
+├── README.md                # Documentación del proyecto
+├── pytest.ini               # Archivo de configuración central de pytest
+├── requirements.txt         # Archivo con las dependencias necesarias
+├── reports/                 # Directorio de reportes
+│   └── reporte.html         # Reporte HTML generado tras la ejecución (auto-generado)
+├── tests/                   # Directorio que contiene los casos de prueba
+│   ├── __init__.py
+│   ├── conftest.py          # Fixture de Pytest (inicialización y cierre del WebDriver)
+│   ├── test_cart.py         # Pruebas de interacción con el carrito de compras
+│   ├── test_inventory.py    # Pruebas de validación del catálogo de productos
+│   └── test_login.py        # Pruebas relacionadas al inicio de sesión
+└── utils/                   # Directorio para funciones auxiliares (helpers)
+    ├── __init__.py
+    └── helpers.py           # Funciones reutilizables como el proceso de login
+```
 
 ## Pasos de instalación
 
